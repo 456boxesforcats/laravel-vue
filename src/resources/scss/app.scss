@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'resources/scss/variables';
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Bootstrap-Vue
+@import '../../node_modules/bootstrap-vue-3/dist/bootstrap-vue-3.css';
+
+// Icons
+@import '../../vendor/twbs/bootstrap-icons/font/bootstrap-icons.scss';
+
+// Loaders
+@import '../../node_modules/vue-loaders/dist/vue-loaders.css';
+
+// Theme
+@import 'resources/scss/theme';
+
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url(../../vendor/twbs/bootstrap-icons/font/fonts/bootstrap-icons.woff2) format("woff2"),
+    url(../../vendor/twbs/bootstrap-icons/font/fonts/bootstrap-icons.woff) format("woff");
+}
+
+.dropdown-menu {
+    &[data-bs-popper] {
+        margin-top: var(--#{$prefix}dropdown-spacer);
+    }
+}
